@@ -113,7 +113,9 @@ th {
     border-radius: 5px;
 }
 .in-button {
-   align-self: center;
+   display: flex;
+   gap: 15px;
+    justify-content: center;
 }
 select, input[type="text"] {
     padding: 8px;
@@ -197,6 +199,10 @@ select, input[type="text"] {
     .full-card {
         width: 100%;
         padding: 10px;
+    }
+    .in-button {
+        flex-direction: column;
+        gap: 10px;
     }
     .pin {
         flex-direction: column;
