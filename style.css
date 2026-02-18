@@ -173,3 +173,37 @@ select, input[type="text"] {
     width: 300px;
     margin: 20px 0 0;
 }
+
+@media screen and (max-width: 768px) {
+    .header {
+        font-size: 22px;
+        text-align: center;
+    }
+    .load-card input {
+        width: 90%;
+    }
+    .wallet-container {
+        justify-content: center; 
+    }
+    .balance-card {
+        min-width: 45%;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        width: 95%;
+    }
+    .full-card {
+        width: 100%;
+        padding: 10px;
+    }
+    .pin {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .mtn-card, .glo-card, .airtel-card, .mobile-card  {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
