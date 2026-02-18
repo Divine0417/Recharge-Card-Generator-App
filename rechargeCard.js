@@ -77,7 +77,8 @@ let database = JSON.parse(localStorage.getItem('cards')) ? JSON.parse(localStora
         database.push(pinDetails);
 
         displayPin.innerHTML = ` <b>${pin}</b>`;
-        alert(`You have successfully generated ${pinDetails.network} airtime of ${pinDetails.amount}.`)
+        alert(`You have successfully generated ${pinDetails.network} airtime of ${pinDetails.amount}.`);
+        userAmount.value = '';
         console.log(database);
         updateStorage();
     }
@@ -114,6 +115,8 @@ let database = JSON.parse(localStorage.getItem('cards')) ? JSON.parse(localStora
 
                 let msg = foundCard.network === 'MTN' ? "Yello!" : "Dear Customer,";
                 alert(`${msg} You have successfully loaded N${foundCard.amount} ${foundCard.network} airtime. ✅`);
+                userLoad.value = '*311*...#';
+                displayPin.innerHTML = 'SUCCESSFUL!';
                 //alert(`Recharge Successful! You have loaded N${foundCard.amount} ${foundCard.network} airtime. ✅`);
                 /*if (foundCard.network === 'MTN') {
                     alert(`YEllO! You have successfuly loaded N${foundCard.amount} ${foundCard.network} airtime. ✅`);

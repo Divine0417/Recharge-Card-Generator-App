@@ -36,6 +36,15 @@ table {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 15px;
 }
+table {
+    width: 80%;
+    margin: 25px auto;
+}
+th {
+    background-color: #051cf2;
+    color: white;
+    font-size: 18px;
+}
 .wallet-container {
     display: flex;
     gap: 15px;
@@ -73,6 +82,7 @@ table {
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
     color: white;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 .glo-card {
     background-image: url(glo-limited-seeklogo.png);
@@ -161,5 +171,5 @@ select, input[type="text"] {
 }
 #search-input {
     width: 300px;
-    margin: 20px 0;
+    margin: 20px 0 0;
 }
