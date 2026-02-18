@@ -80,7 +80,7 @@ th {
     background-size: contain;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: darken;
+    background-blend-mode: overlay;
     color: white;
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
